@@ -26,5 +26,5 @@ FROM alpine:3.16.0
 RUN apk add bash build-base gcompat
 COPY --from=build /app/pos-product-svc .
 # Expose port
-EXPOSE 8000
+EXPOSE 8002
 CMD ["/pos-product-svc"]
